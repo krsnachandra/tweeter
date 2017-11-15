@@ -28,5 +28,9 @@ main {
   width: 450px;
   margin: 0 auto;
   background-color: white;
-  padding-top: 100px
+  padding-top: 100px;
+}
+
+footer {
+  height: 40px;
 }

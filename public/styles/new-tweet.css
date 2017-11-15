@@ -17,8 +17,12 @@ textarea {
   width: 100%;
 }
 
-h2 {
+.new-tweet h2 {
   border-bottom-style: solid;
   border-width: 1px;
   margin: 0 0 20px 0;
+}
+
+.exceeded {
+  color: #ba0000;
 }
