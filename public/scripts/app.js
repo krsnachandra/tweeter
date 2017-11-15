@@ -52,14 +52,20 @@ var data = [
   }
 ];
 
+function escape(str) {
+  var div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
 function createTweetElement(tweet) {
   var formattedTweet = `<article id="tweet">
           <header>
-            <img src=${tweet.user.avatars.regular} alt=${tweet.user.name}></img>
-            <h2>${tweet.user.name}</h3>
-            <p>${tweet.user.handle}</p>
+            <img src=${tweet.user.avatars.regular} alt=${escape(tweet.user.name)}></img>
+            <h2>${escape(tweet.user.name)}</h3>
+            <p>${escape(tweet.user.handle)}</p>
           </header>
-          <div>${tweet.content.text}</div>
+          <div>${escape(tweet.content.text)}</div>
           <footer>
             <time>${tweet.created_at}</time>
             <img src="../images/hover.png" alt="hover"></img>
