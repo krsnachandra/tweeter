@@ -9,12 +9,12 @@ $(function () {
     var $counter = $this.closest('.new-tweet').find('.counter');
     $counter.text(remainingLetterBudget);
     if (remainingLetterBudget < 0) {
-      $counter.addClass("exceeded");
+      $counter.addClass('exceeded');
     } else {
-      $counter.removeClass("exceeded");
+      $counter.removeClass('exceeded');
     }
   };
 
-  $(".new-tweet textarea").on("input", countChars);
+  $('.new-tweet textarea').on('input', countChars);
 
 });

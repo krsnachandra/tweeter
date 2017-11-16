@@ -29,7 +29,7 @@ $(function () {
   };
 
   function renderTweets(tweets) {
-    var $tweetFeed = $("#tweet-feed").empty();
+    var $tweetFeed = $('#tweet-feed').empty();
     for(var tweet of tweets) {
       $tweetFeed.prepend(createTweetElement(tweet));
     }
@@ -38,8 +38,8 @@ $(function () {
 
   function loadTweets() {
     $.ajax({
-      method: `GET`,
-      url: `/tweets`,
+      method: 'GET',
+      url: '/tweets',
     })
       .done(function (tweets) {
         renderTweets(tweets);
@@ -53,11 +53,11 @@ $(function () {
     var $form = $(this);
     var tweet = $form.find('textarea').val();
     if (Array.from(tweet).length === 0) {
-      alert("You can't tweet that!");
+      alert(`You can't tweet that!`);
       return;
     }
     if (Array.from(tweet).length > 140) {
-      alert("Keep it under 140 characters!");
+      alert('Keep it under 140 characters!');
       return;
     }
     $.ajax({
@@ -66,15 +66,15 @@ $(function () {
       data: $form.serialize(),
     })
       .done(function () {
-        $form.find('textarea').val("");
+        $form.find('textarea').val('');
         $form.closest('.new-tweet').find('.counter').text('140');
         loadTweets();
       })
   };
 
   function toggleComposeTweet() {
-    $(`.new-tweet`).slideToggle();
-    $(`.new-tweet textarea`).select();
+    $('.new-tweet').slideToggle();
+    $('.new-tweet textarea').select();
   }
 
   $('.new-tweet form').on('submit', handleNewTweet);

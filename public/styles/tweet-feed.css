@@ -9,6 +9,7 @@
   border-width: 1px;
   border-color: #d0d0d0;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 #tweet:hover footer img {
@@ -32,6 +33,7 @@
   float: left;
   line-height: 80px;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 #tweet h2 {
@@ -51,6 +53,7 @@
   color: #3C6770;
   padding: 10px;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 
 #tweet time {
