@@ -53,7 +53,7 @@ $(function () {
     var $form = $(this);
     var tweet = $form.find('textarea').val();
     if (Array.from(tweet).length === 0) {
-      alert(`You can't tweet that!`);
+      alert(`You can't send an empty tweet!`);
       return;
     }
     if (Array.from(tweet).length > 140) {
