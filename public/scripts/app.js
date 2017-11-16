@@ -74,6 +74,7 @@ $(function () {
 
   function toggleComposeTweet() {
     $(`.new-tweet`).toggle();
+    $(`.new-tweet textarea`).select();
   }
 
   $('.new-tweet form').on('submit', handleNewTweet);
