@@ -73,7 +73,7 @@ $(function () {
   };
 
   function toggleComposeTweet() {
-    $(`.new-tweet`).toggle();
+    $(`.new-tweet`).slideToggle();
     $(`.new-tweet textarea`).select();
   }
 
