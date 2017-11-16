@@ -53,8 +53,12 @@ $(function () {
     var $form = $(this);
     var tweet = $form.find('textarea').val();
     // console.log(Array.from(tweet).length);
-    if (Array.from(tweet).length = 0) {
+    if (Array.from(tweet).length === 0) {
       alert("You can't tweet that!");
+      return;
+    }
+    if (Array.from(tweet).length > 140) {
+      alert("Keep it under 140 characters!");
       return;
     }
     $.ajax({
