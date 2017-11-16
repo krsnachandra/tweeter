@@ -37,6 +37,7 @@
 #tweet h2 {
   float: left;
   margin: 0;
+  padding-left: 5px;
 }
 
 #tweet p {
