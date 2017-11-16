@@ -15,23 +15,23 @@ html {
  */
 
 body {
-  margin: 0;
-  color: #244751;
   background-color: #eee;
+  color: #244751;
   font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 main {
-  width: 450px;
+  background-color: #FFFFFF;
   margin: 0 auto;
-  background-color: white;
   padding-top: 100px;
+  width: 450px;
 }
 
 footer {
-  height: 40px;
   background-color: #00a087;
+  height: 40px;
 }

@@ -1,11 +1,11 @@
 .new-tweet {
-  padding: 10px;
   background-color: #eaeaea;
-  margin: 0 2em;
-  border-style: solid;
-  border-width: 1px;
   border-color: #d0d0d0;
   border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0 2em;
+  padding: 10px;
 }
 
 .counter {

@@ -11,10 +11,10 @@
 }
 
 #nav-bar .logo {
-  width: 80px;
+  float: left;
   height: 80px;
   padding-right: 10px;
-  float: left;
+  width: 80px;
 }
 
 #nav-bar .header {
@@ -30,13 +30,13 @@
 }
 
 #nav-bar .right-side .compose {
+  background-color: #E1FEFF;
+  border-color: #000000;
+  border-radius: 5px;
+  color: #00A789;
   line-height: 60px;
   padding: 0;
   width: 100px;
-  border-color: #000000;
-  border-radius: 5px;
-  background-color: #E1FEFF;
-  color: #00A789;
 }
 
 #nav-bar .compose:hover {

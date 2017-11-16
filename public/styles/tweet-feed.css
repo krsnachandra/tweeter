@@ -4,11 +4,11 @@
 
 #tweet {
   background-color: white;
-  margin: 8px 2em;
-  border-style: solid;
-  border-width: 1px;
   border-color: #d0d0d0;
   border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 8px 2em;
   overflow: hidden;
 }
 
@@ -22,18 +22,18 @@
 
 #tweet header {
   background-color: #eaeaea;
-  padding: 10px;
-  height: 80px;
   color: #5F7F86;
+  height: 80px;
+  padding: 10px;
 }
 
 #tweet header img {
-  height: 60px;
-  width: 60px;
-  float: left;
-  line-height: 80px;
   border-radius: 5px;
+  float: left;
+  height: 60px;
+  line-height: 80px;
   overflow: hidden;
+  width: 60px;
 }
 
 #tweet h2 {
@@ -47,13 +47,13 @@
 }
 
 #tweet footer {
+  background-color: #FFFFFF;
+  border-color: #EEEEEE;
   border-top-style: solid;
   border-width: 1px;
-  border-color: #EEEEEE;
   color: #3C6770;
-  padding: 10px;
-  background-color: #FFFFFF;
   overflow: hidden;
+  padding: 10px;
 }
 
 #tweet time {
@@ -67,6 +67,6 @@
 
 #tweet div {
   color: #3C6770;
-  margin: 20px;
   font-size: 150%;
+  margin: 20px;
 }
