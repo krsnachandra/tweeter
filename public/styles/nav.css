@@ -23,3 +23,23 @@
   font-size: 200%;
   line-height: 80px
 }
+
+#nav-bar .right-side {
+  float: right;
+  line-height: 80px;
+}
+
+#nav-bar .right-side .compose {
+  line-height: 60px;
+  padding: 0;
+  width: 100px;
+  border-color: #000000;
+  border-radius: 5px;
+  background-color: #E1FEFF;
+  color: #00A789;
+}
+
+#nav-bar .compose:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}

@@ -46,13 +46,12 @@ $(function () {
       })
   }
 
-  loadTweets();
+
 
   function handleNewTweet(event) {
     event.preventDefault();
     var $form = $(this);
     var tweet = $form.find('textarea').val();
-    // console.log(Array.from(tweet).length);
     if (Array.from(tweet).length === 0) {
       alert("You can't tweet that!");
       return;
@@ -73,8 +72,12 @@ $(function () {
       })
   };
 
-  var $form = $('.new-tweet form');
+  function toggleComposeTweet() {
+    $(`.new-tweet`).toggle();
+  }
 
-  $form.on('submit', handleNewTweet);
+  $('.new-tweet form').on('submit', handleNewTweet);
+  $('.compose').on('click', toggleComposeTweet);
+  loadTweets();
 
 });
