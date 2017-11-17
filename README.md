@@ -22,5 +22,8 @@ This was built in bootcamp to practice HTML, CSS, JS, jQuery and AJAX front-end 
 
 ## Screenshots
 
+Write a new tweet right away!
 ![Screenshot of compose tweet](https://github.com/krsnachandra/tweeter/blob/master/docs/composeTweet.png?raw=true)
+
+See your tweet in the tweet feed with a timestamp!
 ![Screenshot of tweet feed](https://github.com/krsnachandra/tweeter/blob/master/docs/tweetFeed.png?raw=true)
