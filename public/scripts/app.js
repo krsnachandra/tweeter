@@ -20,7 +20,7 @@ $(function () {
             </header>
             <div>${escape(tweet.content.text)}</div>
             <footer>
-              <time>${tweet.created_at}</time>
+              <time>${moment(tweet.created_at).fromNow()}</time>
               <img src="../images/hover.png" alt="hover"></img>
             </footer>
           </article>`;
