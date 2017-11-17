@@ -1,3 +1,4 @@
+/* global $, moment */
 /*
  * Client-side JS logic goes here
  * jQuery is already loaded
@@ -9,7 +10,7 @@ $(function () {
     var div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
-  };
+  }
 
   function createTweetElement(tweet) {
     var formattedTweet = `<article id="tweet">
@@ -26,7 +27,7 @@ $(function () {
           </article>`;
 
     return formattedTweet;
-  };
+  }
 
   function renderTweets(tweets) {
     var $tweetFeed = $('#tweet-feed').empty();
@@ -34,16 +35,16 @@ $(function () {
       $tweetFeed.prepend(createTweetElement(tweet));
     }
     return $tweetFeed;
-  };
+  }
 
   function loadTweets() {
     $.ajax({
       method: 'GET',
-      url: '/tweets',
+      url: '/tweets'
     })
       .done(function (tweets) {
         renderTweets(tweets);
-      })
+      });
   }
 
 
@@ -63,14 +64,14 @@ $(function () {
     $.ajax({
       method: 'POST',
       url: '/tweets',
-      data: $form.serialize(),
+      data: $form.serialize()
     })
       .done(function () {
         $form.find('textarea').val('');
         $form.closest('.new-tweet').find('.counter').text('140');
         loadTweets();
-      })
-  };
+      });
+  }
 
   function toggleComposeTweet() {
     $('.new-tweet').slideToggle();
