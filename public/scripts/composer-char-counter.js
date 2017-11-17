@@ -1,3 +1,5 @@
+/* global $ */
+
 $(function () {
 
   var maxChars = 140;
