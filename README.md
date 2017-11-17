@@ -19,3 +19,8 @@ This was built in bootcamp to practice HTML, CSS, JS, jQuery and AJAX front-end 
 - Chance
 - md5
 - MongoDB
+
+## Screenshots
+
+![Screenshot of compose tweet](https://github.com/krsnachandra/tweeter/blob/master/docs/composeTweet.png?raw=true)
+![Screenshot of tweet feed](https://github.com/krsnachandra/tweeter/blob/master/docs/tweetFeed.png?raw=true)
